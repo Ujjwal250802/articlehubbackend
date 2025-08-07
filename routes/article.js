@@ -38,7 +38,7 @@ router.post('/upload/editor-image', auth.autheticateToken, upload.single('image'
   }
   // Use environment variable for production URL
   const baseUrl = process.env.NODE_ENV === 'production' 
-    ? process.env.RENDER_EXTERNAL_URL || 'https://your-backend-app.onrender.com'
+    ? process.env.RENDER_EXTERNAL_URL || 'https://articlehubbackend-1yka.onrender.com'
     : 'http://localhost:8080';
   const imageUrl = `${baseUrl}/uploads/${req.file.filename}`;
   return res.status(200).json({ url: imageUrl });

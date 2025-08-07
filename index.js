@@ -17,7 +17,7 @@ connectDB();
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
     ? [
-        process.env.FRONTEND_URL || 'https://your-frontend-app.vercel.app',
+        process.env.FRONTEND_URL || 'https://articlehubfrontend-r7r9.vercel.app',
         'https://vercel.app',
         /\.vercel\.app$/
       ]
